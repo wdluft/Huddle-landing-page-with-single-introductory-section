@@ -12,6 +12,13 @@
       href="./images/favicon-32x32.png"
     />
 
+    <script
+      src="https://kit.fontawesome.com/90dffc8819.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+
     <title>
       Frontend Mentor | Huddle landing page with single introductory section
     </title>
@@ -19,19 +26,44 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <!-- Build The Community Your Fans Will Love
+    <div class="container">
+      <img src="./images/logo.svg" alt="Logo" class="logo" />
+    </div>
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
+    <header class="header">
+      <div class="container">
+        <img src="./images/illustration-mockups.svg" alt="Mockups" />
+      </div>
+    </header>
+    <section class="body">
+      <div class="container flex">
+        <h1 class="body__title">
+          Build The Community Your Fans Will Love
+        </h1>
+        <p class="body__p">
+          Huddle re-imagines the way we build communities. You have a voice, but
+          so does your audience. Create connections with your users as you
+          engage in genuine discussion.
+        </p>
+        <button class="body__btn">
+          Register
+        </button>
+      </div>
+    </section>
 
-  Register -->
-
-    <footer>
+    <footer class="container footer">
+      <div class="socials">
+        <i class="fab fa-facebook"></i>
+        &nbsp;
+        <i class="fab fa-twitter"></i>
+        &nbsp;
+        <i class="fab fa-instagram"></i>
+      </div>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#">Will</a>.
       </p>
     </footer>
   </body>
