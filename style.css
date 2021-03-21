@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  --violet: hsl(257, 40%, 49%);
+  --magenta: hsl(300, 69%, 71%);
+  --white: hsl(69, 69%, 100%);
+  --bodyText: 'Open Sans', sans-serif;
+  --headingText: 'Poppins', sans-serif;
+  --textColor: var(--white);
+  --bgColor: var(--violet);
+
+  background-color: var(--bgColor);
+  color: var(--textColor);
+  font-family: var(--bodyText);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  position: relative;
+}
+
+body::before {
+  position: absolute;
+  content: '';
+  background-image: url('./images/bg-mobile.svg');
+  width: 100%;
+  min-height: 375px;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+header {
+  text-align: left;
+  padding: 2.25rem 2.5rem 3.75rem;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  display: inline-block;
+}
+
+main {
+  padding: 0 2.25rem 3.5rem;
+}
+
+.dashboard-img {
+  padding-bottom: 3.25rem;
+}
+
+h1 {
+  font-family: var(--headingText);
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+
+p {
+  padding-bottom: 1.5rem;
+}
+
+button {
+  background-color: var(--white);
+  color: var(--violet);
+  border: none;
+  box-shadow: 1px 3px 5px 0 hsla(69, 69%, 0%, 26.9%);
+  border-radius: 28px;
+  padding: 0.75rem 4.75rem;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--magenta);
+  color: var(--white);
+}
+
+img {
+  max-width: 100%;
+}
+
+.socials-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.socialIcon {
+  margin: 0.375rem;
+}
+
+.socialIcon a {
+  color: var(--white);
+  display: inline-block;
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.socialIcon a:hover {
+  color: var(--magenta);
+  border-color: var(--magenta);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 2rem 0;
+}
+.attribution a {
+  color: var(--magenta);
+}
+
+@media screen and (min-width: 40rem) {
+  body {
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    text-align: left;
+  }
+
+  body::before {
+    background-image: url('./images/bg-desktop.svg');
+    height: 100vh;
+    width: 100vw;
+  }
+
+  header {
+    padding-top: 4rem;
+    padding-bottom: 5.5rem;
+    padding-left: 5rem;
+  }
+
+  .logo {
+    width: 200px;
+    height: auto;
+  }
+
+  main {
+    display: flex;
+    padding: 0 5rem 1rem;
+  }
+
+  .dashboard-img {
+    padding: 0;
+    line-height: 0;
+  }
+
+  section {
+    padding-top: 2.5rem;
+    padding-left: 3rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    line-height: 3.75rem;
+    padding-bottom: 1.5rem;
+  }
+
+  button {
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    padding: 0.75rem 4rem;
+  }
+
+  .socials-list {
+    justify-content: flex-end;
+    padding-right: 5rem;
+  }
+
+  .socialIcon a {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .attribution {
+    padding: 0 5rem 0 0;
+    text-align: right;
+  }
+}
